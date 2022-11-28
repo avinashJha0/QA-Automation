@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+<listener class-name="com.phpTravels.utilities.Reporting"/>
+</listeners>
+  <test thread-count="5" name="Automation Test for MMT">
+  <parameter name="browser" value="chrome" />
+    <classes>
+ <!-- <class name="com.phpTravels.testCases.LoginTest"/>  --> 
+  <class name="com.phpTravels.testCases.FlightTest"/>
+ <!--     <class name="com.phpTravels.testCases.HotelTest"/>   --> 
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
